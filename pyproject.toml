@@ -7,9 +7,6 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-    "structlog (>=25.1.0,<26.0.0)"
-]
 
 [tool.poetry]
 packages = [{include = "otus_hw4", from = "src"}]
@@ -22,6 +19,10 @@ mypy = "^1.15.0"
 pytest = "^8.3.5"
 pytest-cov = "^6.0.0"
 
+
+[tool.poetry.dependencies]
+redis = "^5.2.1"
+python-dotenv = "^1.0.1"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
