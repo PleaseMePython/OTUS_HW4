@@ -4,7 +4,7 @@ setup:
 	poetry lock
 	poetry install
 run:
-	python -m otus_hw1\api.py
+	python -m otus_hw4\api.py
 lint:
 	poetry run ruff check src
 	poetry run ruff check tests
